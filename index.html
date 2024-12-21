@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4d391100ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../spotify-clone/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Spotify - web player</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="nav-logo">
-                <i class="fa-brands fa-spotify"></i>
-            </div>
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-spotify"></i>
+        </div>
+        <div class="home-icon">
+            <button class="icon">
+                <i class="fa-solid fa-house"></i>                
+            </button>
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="O que você quer ouvir?"/>
+            <i class="fa-regular fa-folder-open"></i>
+        </div>
+        <div class="user-buttons">
+            <button class="sub">Inscrever-se</button>
+            <button class="in">Entrar</button>
+        </div>
+    </header>
+<main>
+    <nav class="container">
+        <div class="sidebar">
             <div class="nav-library">
                 <i class="fa-solid fa-bars-staggered"></i>
                 <p>Sua Biblioteca</p>
@@ -42,101 +59,84 @@
                     Português do Brasil
                 </button>
             </div>
-        </nav>
-        
-    <main>
-        <div class="home-icon">
-            <button class="icon">
-              <i class="fa-solid fa-house"></i>                
-            </button>
         </div>
-        <header class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input placeholder="O que você quer ouvir?"></i>
-            <i class="fa-regular fa-folder-open"></i>
-            <div class="search-bar-explore"></div>
-            <div class="right-bar">
-        </header>
-        <div>
-            <button>Inscrever-se</button>
-            <button>Entrar</button>
+    </nav>
+
+    <section class="content">
+        <h2>Artistas populares</h2>
+        <div class="artists-grid">
+            <article class="artists-card">
+                <img src="assets/img/artists/billieeilish.jpg" alt="Billie Eilish">
+                <h3>Billie Eilish</h3>
+                <p>Artista</p>
+            </article>
+            <article class="artists-card">
+                <img src="assets/img/artists/calcinhapreta.jpg" alt="Calcinha Preta">
+                <h3>Calcinha Preta</h3>
+                <p>Artista</p>
+            </article>
+            <article class="artists-card">
+                <img src="assets/img/artists/cbj.jpg" alt="Charlie Brown Jr.">
+                <h3>Charlie Brown Jr.</h3>
+                <p>Artista</p>
+            </article>
+            <article class="artists-card">
+                <img src="assets/img/artists/claricefalcao.jpg" alt="Clarice Falcão">
+                <h3>Clarice Falcão</h3>
+                <p>Artista</p>
+            </article>
+            <article class="artists-card">
+                <img src="assets/img/artists/luisasonza.jpg" alt="Luísa Sonza">
+                <h3>Luísa Sonza</h3>
+                <p>Artista</p>
+            </article>
+            <article class="artists-card">
+                <img src="assets/img/artists/theweeknd.jpg" alt="The Weeknd">
+                <h3>The Weeknd</h3>
+                <p>Artista</p>
+            </article>
         </div>
-                
+        <h2>Singles e álbuns que todo mundo gosta</h2>
+        <div class="albums-grid">
+            <article class="albums-card">
+                <img src="assets/img/albums/curandoasferidas.jpg" alt="Curando as Feridas">
+                <h4>Curando as Feridas</h4>
+                <p>Ministério de Adoração AlemD</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/ensaiosobreela.jpg" alt="Ensaio Sobre Ela">
+                <h4>Ensaio Sobre Ela</h4>
+                <p>Cicero</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/oquevocequersaber.jpg" alt="O Que Você Quer Saber de Verdade">
+                <h4>O Que Você Quer Saber de Verdade</h4>
+                <p>Marisa Monte</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/otempoeagora.jpg" alt="O Tempo É Agora">
+                <h4>O Tempo É Agora</h4>
+                <p>ANAVITÓRIA</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/rosie.jpg" alt="Rosie">
+                <h4>Rosie</h4>
+                <p>Rosé</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/soseidancarcomvoce.jpg" alt="Efêmera">
+                <h4>Só Sei Dançar Com Você</h4>
+                <p>Tulipa Ruiz, Zé Pi</p>
+            </article>
+            <article class="albums-card">
+                <img src="assets/img/albums/vicioinerente.jpg" alt="Vício Inerente">
+                <h4>Tudo Pra Amar Você</h4>
+                <p>Marina Sena</p>
+            </article>
+        </div>
+    </section>
 
-        <section class="content">
-            <h2>Artistas populares</h2>
-            <div class="artists-grid">
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/billieeilish.jpg" alt="Billie Eilish">
-                    <h3>Billie Eilish</h3>
-                    <p>Artista</p>
-                </article>
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/calcinhapreta.jpg" alt="Calcinha Preta">
-                    <h3>Calcinha Preta</h3>
-                    <p>Artista</p>
-                </article>
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/cbj.jpg" alt="Charlie Brown Jr.">
-                    <h3>Charlie Brown Jr.</h3>
-                    <p>Artista</p>
-                </article>
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/claricefalcao.jpg" alt="Clarice Falcão">
-                    <h3>Clarice Falcão</h3>
-                    <p>Artista</p>
-                </article>
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/luisasonza.jpg" alt="Luísa Sonza">
-                    <h3>Luísa Sonza</h3>
-                    <p>Artista</p>
-                </article>
-                <article class="artists-card">
-                    <img src="../spotify-clone/assets/img/artists/theweeknd.jpg" alt="The Weeknd">
-                    <h3>The Weeknd</h3>
-                    <p>Artista</p>
-                </article>
-            </div>
-            <h2>Singles e álbuns que todo mundo gosta</h2>
-            <div class="albums-grid">
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/curandoasferidas.jpg" alt="Curando as Feridas">
-                    <h4>Curando as Feridas</h4>
-                    <p>Ministério de Adoração AlemD</p>
-                </article>
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/ensaiosobreela.jpg" alt="Ensaio Sobre Ela">
-                    <h4>Ensaio Sobre Ela</h4>
-                    <p>Cicero</p>
-                </article>
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/oquevocequersaber.jpg" alt="O Que Você Quer Saber de Verdade">
-                    <h4>O Que Você Quer Saber de Verdade</h4>
-                    <p>Marisa Monte</p>
-                </article><article>
-                    <img src="../spotify-clone/assets/img/albums/otempoeagora.jpg" alt="O Tempo É Agora">
-                    <h4>O Tempo É Agora</h4>
-                    <p>Anavitória</p>
-                </article>
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/rosie.jpg" alt="Rosie">
-                    <h4>Rosie</h4>
-                    <p>Rosé</p>
-                </article>
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/soseidancarcomvoce.jpg" alt="Efêmera">
-                    <h4>Só Sei Dançar Com Você</h4>
-                    <p>Tulipa Ruiz, Zé Pi</p>
-                </article>
-                <article>
-                    <img src="../spotify-clone/assets/img/albums/vicioinerente.jpg" alt="Vício Inerente">
-                    <h4>Tudo Pra Amar Você</h4>
-                    <p>Marina Sena</p>
-                </article>
-            </div>
-        </section>
-
-    </main>
+</main>
     
 </body>
 </html>

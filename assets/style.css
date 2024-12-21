@@ -8,27 +8,62 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background-color: #000;
     color: #fff;
 }
 
-.container {
+header {
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
 
+.user-buttons {
+    padding: 10px 20px;
+    margin-left: 8px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+
+}
+
+.container {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container p {
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .sidebar {
-    width: 300px;
+    width: 330px;
     background-color: #121212;
     padding: 24px;
     padding-bottom: 90px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
-
 }
 
-.nav-logo i {
+
+.logo i {
    font-size: 24px;
 }
 
@@ -92,23 +127,13 @@ body {
     border-radius: 20px;
 }
 
-main {
-    padding: 24px;
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.bar {
-    
-}
-
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #242424;
+    background-color: #333;
     padding: 8px 16px;
-    border-radius: 20px;
-    width: 300px;
+    border-radius: 30px;
+    width: 400px;
 }
 
 .home-icon button {
@@ -127,11 +152,51 @@ main {
     outline: none;
 }
 
+.content {
+    flex: 1;
+    padding: 2px;
+    overflow-y: auto;
+}
+
 .artists-grid, .albums-grid {
-    width: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 24px;
-    margin: 40px;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
 
+.artists-card, .albums-card{
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition:  background-color 0.3s;
+}
+
+.artists-card:hover, .albums-card:hover{
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+.artists-grid img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.albums-grid img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
 }
